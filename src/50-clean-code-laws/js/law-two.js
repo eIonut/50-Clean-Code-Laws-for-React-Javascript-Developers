@@ -22,4 +22,4 @@ const greet = (user) => {
   const name = fullName(user);
   const roleMsg = user.isAdmin ? "admin access" : "regular access";
   console.log(`Hello, ${name}! You have ${roleMsg}.`);
-}
+};

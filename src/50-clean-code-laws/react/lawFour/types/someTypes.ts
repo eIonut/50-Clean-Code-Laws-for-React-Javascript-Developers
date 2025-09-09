@@ -1,0 +1,1 @@
+/* Some TS Types to be declared here */

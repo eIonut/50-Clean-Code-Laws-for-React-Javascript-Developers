@@ -8,8 +8,7 @@ const calculateCircumference = (radius) => 2 * 3.14159 * radius;        // and h
 
 /* AFTER */
 
-const PI = Math.PI;  // or 3.14159
+const PI = Math.PI; // or 3.14159
 
-const  calculateArea = (radius) => PI * radius * radius;
-const calculateCircumference = (radius) =>  2 * PI * radius;
-
+const calculateArea = (radius) => PI * radius * radius;
+const calculateCircumference = (radius) => 2 * PI * radius;

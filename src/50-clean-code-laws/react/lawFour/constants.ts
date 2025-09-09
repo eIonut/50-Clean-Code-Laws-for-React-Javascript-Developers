@@ -1,0 +1,1 @@
+/* Some constants to be declared here */

@@ -1,0 +1,1 @@
+/* Some hook to be declared here */

@@ -49,7 +49,7 @@ const ProductList = () => {
 
 */
 
-const useFetch = (url) => {
+const useFetch = (url: string) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -65,24 +65,24 @@ const useFetch = (url) => {
   return { data, loading };
 };
 
-const UserList = () => {
+export const UserList = () => {
   const { data: users, loading } = useFetch("/api/users");
   if (loading) return <p>Loading...</p>;
   return (
     <ul>
-      {users.map((u) => (
+      {users.map((u: { id: string; name: string }) => (
         <li key={u.id}>{u.name}</li>
       ))}
     </ul>
   );
 };
 
-const ProductList = () => {
+export const ProductList = () => {
   const { data: products, loading } = useFetch("/api/products");
   if (loading) return <p>Loading...</p>;
   return (
     <ul>
-      {products.map((p) => (
+      {products.map((p: { id: string; title: string }) => (
         <li key={p.id}>{p.title}</li>
       ))}
     </ul>
